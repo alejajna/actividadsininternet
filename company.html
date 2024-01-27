@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.css">
+
+</head>
+<body style="background-color: #ddd">
+    <div class="container">
+        <button data-bs-toggle="modal" data-bs-target="#modal_create" class="btn btn-primary btn-sm mt-4">Crear nueva empresa</button>
+        <a href="./employee.html" class="btn btn-success btn-sm mt-4">Gestionar empleados</a>
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>NOMBRE EMPRESA</th>
+                                        <th>DESCRIPCIÓN</th>
+                                        <th>FUNDADOR</th>
+                                        <th>LOGO</th>
+                                        <th>ACCIONES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>cc23</td>
+                                        <td>Coca-Cola</td>
+                                        <td>Descripcion de ejemplo de la empresa</td>
+                                        <td>pepito perez</td>
+                                        <td>LOGO</td>
+                                        <td>
+                                            <a href="">Detalle</a>
+                                            <a href="">Eliminar</a>
+                                            <a href="">Editar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Crear nueva empresa</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-sm table-hover table-striped">
+                    <tbody>
+                        <tr>
+                            <th><label for="">Nombre de la empresa</label></th>
+                            <td><input type="text" class="form-control" id="nombreEmpresa" ></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">Descripción de la empresa</label></th>
+                            <td>
+                                <textarea class="form-control" name="" id="descripEmp" cols="30" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="">Fundador</label></th>
+                            <td><input type="text" class="form-control" id="fundador" ></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">LOGO</label></th>
+                            <td><input type="text" class="form-control" id="logo"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="">Sitio web o portafolio</label></th>
+                            <td><input type="text" class="form-control" id="sitiowp"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="btncrear" class="btn btn-primary w-100">Crear nuevo usuario</button></td>
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
